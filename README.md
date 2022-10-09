@@ -3,7 +3,7 @@ Implementations of graph algorithms using IMDb, such as BFS and Dijkstra.
 
 This is is an extended version of an individual project submitted for the course *IN2010: Algorithms and Data Structures* at UiO. 
 
-## Introducing the graph
+## Organizing the graph
 
 Each node represents an actor, uniquely identified by a name id, and edges between two nodes represents movies both actors have played in. A movie is uniquely identified by a title id. Each edge is marked with the movie's name and IMDb rating. 
 
