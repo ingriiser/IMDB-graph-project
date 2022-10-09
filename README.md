@@ -3,7 +3,7 @@ Implementations of graph algorithms using IMDb, such as BFS and Dijkstra.
 
 This is is an extended version of an individual project submitted for the course *IN2010: Algorithms and Data Structures* at UiO. 
 
-## Presenting the graph
+## Introducing the graph
 
 Each node represents an actor, uniquely identified by a name id, and edges between two nodes represents movies both actors have played in. A movie is uniquely identified by a title id. Each edge is marked with the movie's name and IMDb rating. 
 
@@ -22,15 +22,15 @@ The dictionary is organized so that each key is a node, the actor, and each valu
 Under the construction of the graph, 3 additional dictionaries are obtained: 
 - actors_per_movie lists all the actors that play in a movie. To find all the actors in *My Own Private Idaho* one can do the following: 
 
-*actors_per_movie['tt0102494'] = [('nm0000203', 'River Phoenix'), ...,  ('nm0001814', 'Gus Van Sant')]*
+  *actors_per_movie['tt0102494'] = [('nm0000203', 'River Phoenix'), ...,  ('nm0001814', 'Gus Van Sant')]*
 
 - movies_per_actor gives us a list of all the movies an actor has played in, which is the information found in [actors.tsv](https://github.com/ingriiser/IMDB-graph-project/blob/main/database/actors.tsv).
 
-*movies_per_actor[('nm0880521', 'Liv Ullmann')] = ['tt0063759', ...., 'tt1170396']*
+  *movies_per_actor[('nm0880521', 'Liv Ullmann')] = ['tt0063759', ...., 'tt1170396']*
 
 - movies_dict gives us the name, rating and votes of each movie, as in [movies.tsv](https://github.com/ingriiser/IMDB-graph-project/blob/main/database/movies.tsv)
 
-*movies_dict['tt0109913'] = ['Go Fish', '5.6', '2085']*
+  *movies_dict['tt0109913'] = ['Go Fish', '5.6', '2085']*
 
 They are kept for future convenience. 
 
